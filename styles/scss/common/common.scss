@@ -1,0 +1,88 @@
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: map-get($color, "white");
+    background: map-get($color, "white");
+    min-width: 480px;
+}
+
+.container {
+    width: min(100% - 32px, 416px);
+    margin-inline: auto;
+}
+
+.logo {
+    @extend %flex;
+    flex-direction: column;
+    padding: 3px 21px 0 21px;
+    height: 41px;
+    width: max-content;
+    border-radius: 50px;
+    background: map-get($color, "white");
+    margin: auto;
+    box-shadow:
+        0px 4px 9px 0px rgba(0, 0, 0, 0.1),
+        0px 16px 16px 0px rgba(0, 0, 0, 0.09),
+        0px 36px 22px 0px rgba(0, 0, 0, 0.05),
+        0px 64px 26px 0px rgba(0, 0, 0, 0.01),
+        0px 100px 28px 0px rgba(0, 0, 0, 0);
+    @extend %transition;
+
+    &:is(:hover, :active) {
+        background: map-get($color, "gray");
+    }
+
+    &__text {
+        font-variant-numeric: lining-nums proportional-nums;
+        font-size: 12px;
+        font-weight: 500;
+        color: map-get($color, "black");
+
+        & .label {
+            font-style: italic;
+            font-weight: 900;
+        }
+    }
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient(107deg, #792106 -7.01%, #ff3d00 53.46%, #822f00 121.15%);
+    filter: drop-shadow(0px 4px 0px #a83b18);
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: map-get($color, "white");
+    padding: 26px 60px;
+    @extend %transition;
+
+    &:is(:hover, :active) {
+        filter: drop-shadow(0px 0px 0px #a83b18);
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 250px;
+        margin-left: 50px;
+        background: #fff;
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.5) 0%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 0.5) 100%
+        );
+        left: -40px;
+        top: -120px;
+        z-index: 1;
+        transform: rotate(45deg);
+        position: absolute;
+        animation: movingFlare 3s ease-in-out 0.05s infinite;
+    }
+}

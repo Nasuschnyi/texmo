@@ -1,0 +1,141 @@
+.footer {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, #fff 100%);
+    backdrop-filter: blur(25px);
+    margin: 0 0 61px;
+
+    &__head {
+        color: map-get($color, "dark");
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin: 0 0 31px;
+    }
+
+    &__title {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        font-size: 20px;
+        line-height: 161%;
+        text-align: center;
+
+        span {
+            color: map-get($color, "green");
+        }
+
+        &::before {
+            content: url("../../images/footer/icon-locked.svg");
+            display: inline-flex;
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 12px;
+        line-height: 136.1%;
+        color: map-get($color, "gray-3");
+        text-align: center;
+    }
+
+    &__desc {
+        font-size: 15px;
+        line-height: 161%;
+        text-align: center;
+        opacity: 0.6;
+        color: map-get($color, "black");
+        margin: 0 0 23px;
+    }
+
+    &__nav {
+        @extend %flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 15px;
+        line-height: 336.1%;
+        padding: 0 14%;
+
+        &-link {
+            color: map-get($color, "black");
+            @extend %transition;
+
+            &:is(:hover, :active) {
+                color: map-get($color, gray-3);
+            }
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__contact {
+        font-size: 15px;
+        line-height: 161%;
+        opacity: 0.6;
+        color: map-get($color, "black");
+    }
+}
+
+.security {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background: #ededed;
+    padding: 20px;
+    margin: 0 0 40px;
+    overflow: hidden;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        &:last-child {
+            border-left: 1px solid rgb(100, 101, 107, 0.3);
+            padding: 0 0 0 21px;
+        }
+    }
+
+    &__figure {
+        position: relative;
+
+        &.left {
+            width: 56px;
+            height: 56px;
+
+            & .security__icon {
+                position: absolute;
+                top: -7px;
+                left: -30px;
+            }
+        }
+
+        &.right {
+            width: 37px;
+            height: 47px;
+        }
+    }
+
+    &__desc {
+        &.left {
+            margin: 0 18px 0 0;
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        color: map-get($color, dark-3);
+        margin: 0 0 6px;
+    }
+
+    &__subtitle {
+        font-size: 12px;
+        line-height: 107.5%;
+        color: map-get($color, gray-4);
+    }
+}

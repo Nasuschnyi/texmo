@@ -1,0 +1,31 @@
+//Variables
+$brkPoint: (
+    "2xl": 1920 px,
+    //desktop-big
+    "xl": 1440px,
+    //desktop
+    "lg": 990px,
+    //laptop
+    "md": 768px,
+    //tablet
+    "sm": 375px,
+    //mobile
+    "xs": 320px,
+    //small
+);
+
+$color: (
+    "dark": #141414,
+    "dark-2": #1c1c1c,
+    "dark-3": #2f2f2f,
+    "black": #000,
+    "gray": #efefef,
+    "gray-2": #4c4c4d,
+    "gray-3": #64656b,
+    "gray-4": #8e8e8e,
+    "orange": #ff6a2b,
+    "blue": #3391ff,
+    "white": #fff,
+    "b-white": #fdfdfd,
+    "green": #40a52f
+);
