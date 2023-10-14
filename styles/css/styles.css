@@ -165,9 +165,10 @@ h6 {
   text-transform: uppercase;
   color: #fff;
   padding: 26px 60px;
+  transform: scale(100%);
 }
 .btn:is(:hover, :active) {
-  filter: drop-shadow(0px 0px 0px #a83b18);
+  transform: scale(102%);
 }
 .btn:after {
   content: "";

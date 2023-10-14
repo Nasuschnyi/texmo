@@ -67,9 +67,10 @@
     color: map-get($color, "white");
     padding: 26px 60px;
     @extend %transition;
+    transform: scale(100%);
 
     &:is(:hover, :active) {
-        filter: drop-shadow(0px 0px 0px #a83b18);
+        transform: scale(102%);
     }
 
     &:after {
