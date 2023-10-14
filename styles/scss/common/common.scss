@@ -1,10 +1,17 @@
-body {
+.body {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: 16px;
+    line-height: 100%;
     color: map-get($color, "white");
-    background: map-get($color, "white");
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, #fff 100%);
+    backdrop-filter: blur(25px);
     min-width: 480px;
+
+    &__wrap {
+        width: 480px;
+        margin: 0 auto;
+    }
 }
 
 .container {
@@ -17,7 +24,7 @@ body {
     flex-direction: column;
     padding: 3px 21px 0 21px;
     height: 41px;
-    width: max-content;
+    width: min-content;
     border-radius: 50px;
     background: map-get($color, "white");
     margin: auto;
@@ -85,4 +92,10 @@ body {
         position: absolute;
         animation: movingFlare 3s ease-in-out 0.05s infinite;
     }
+}
+
+.shadow {
+    width: 335px;
+    background: radial-gradient(50% 50% at 50% 50%, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.2);
 }

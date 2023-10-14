@@ -16,10 +16,10 @@
 		/>
 		<link rel="stylesheet" href="styles/css/styles.css" />
 	</head>
-	<body>
-		<main class="main">
-			<section class="page">
-				<div class="page__wrap">
+	<body class="body">
+		<div class="body__wrap">
+			<main class="main">
+				<section class="page">
 					<header class="header">
 						<div class="container">
 							<a href="#" class="logo">
@@ -27,18 +27,24 @@
 							</a>
 						</div>
 					</header>
-					<h1 class="title">Сделайте поездки еще комфортнее</h1>
-					<div class="subtitle">
-						<p class="subtitle__text">
-							С автомобильным держателем для телефона
-						</p>
+					<div class="head">
+						<div class="container">
+							<h1 class="title">
+								Сделайте поездки еще комфортнее
+							</h1>
+							<div class="subtitle">
+								<p class="subtitle__text">
+									С автомобильным держателем для телефона
+								</p>
+							</div>
+						</div>
 					</div>
 					<div class="container">
 						<div class="content">
 							<ul class="content__list">
 								<li class="content__item">
 									<img
-										src="images/main/page/main-icon-1.png"
+										src="images/main/page/icon-1.png"
 										alt="icon"
 										class="content__icon"
 									/>
@@ -48,7 +54,7 @@
 								</li>
 								<li class="content__item">
 									<img
-										src="images/main/page/main-icon-2.png"
+										src="images/main/page/icon-2.png"
 										alt="icon"
 										class="content__icon"
 									/>
@@ -58,7 +64,7 @@
 								</li>
 								<li class="content__item">
 									<img
-										src="images/main/page/main-icon-3.png"
+										src="images/main/page/icon-3.png"
 										alt="icon"
 										class="content__icon"
 									/>
@@ -70,161 +76,41 @@
 							<figure class="figure">
 								<img
 									class="figure__img"
-									src="images/main/main.png"
+									src="images/main/page/main.png"
 									alt="image"
 								/>
 							</figure>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section class="special">
-				<ul class="special__list">
-					<li class="special__item">Special offer</li>
-					<li class="special__item">Special offer</li>
-					<li class="special__item">Special offer</li>
-					<li class="special__item">Special offer</li>
-				</ul>
-				<div class="special__content">
-					<div class="special__block">
-						<h3 class="special__title">-40% Reducere</h3>
-						<img
-							src="images/icon/icon-percent.png"
-							alt="icon percent"
-						/>
-					</div>
-					<div class="special__wrap">
-						<div class="special__box">
-							<p class="special__subject">Preț vechi</p>
-							<h3 class="special__slogan del">
-								<del>178 Ron</del>
-							</h3>
-						</div>
-						<div class="special__box">
-							<p class="special__subject">Preț nou</p>
-							<h3 class="special__slogan">89 Ron</h3>
-						</div>
-					</div>
-					<button class="btn">Comandă Acum</button>
-					<ul class="special__desc">
-						<li class="special__text">
-							Doar 89 RON față de 150 RON (preț de retail)
-						</li>
-						<li class="special__text">Disponibil doar online</li>
-						<li class="special__text">Plată la livrare</li>
-					</ul>
-				</div>
-			</section>
-			<section class="section">
-				<div class="section__wrap">
-					<div class="container">
-						<h2 class="subject">Совместим со всеми телефонами</h2>
-						<article class="article">
-							<figure class="article__figure">
+					<div class="special">
+						<ul class="special__list">
+							<li class="special__item">Special offer</li>
+							<li class="special__item">Special offer</li>
+							<li class="special__item">Special offer</li>
+							<li class="special__item">Special offer</li>
+						</ul>
+						<div class="special__content">
+							<div class="special__block">
+								<h3 class="special__title">-40% Reducere</h3>
 								<img
-									class="article__icon-phone"
-									src="images/icon/icon-phone.png"
-									alt="icon phone"
+									src="images/icon/icon-percent.png"
+									alt="icon percent"
 								/>
-								<img
-									class="article__icon-arrow"
-									alt="icon arrow"
-									src="images/icon/arrow 1.svg"
-								/>
-							</figure>
-							<div class="article__desc">
-								<span class="article__text"
-									>Механизм регулировки</span
-								>
-								<span class="article__text">
-									позволяет надежно удерживать
-								</span>
-								<span class="article__text"
-									>смартфоны любых брендов и</span
-								>
-								<span class="article__text label">
-									разных размеров от 4 до 6,5”
-								</span>
 							</div>
-						</article>
-						<figure class="figure__pic">
-							<img
-								src="images/main/section/gif/main-gif-1.gif"
-								alt="image"
-							/>
-						</figure>
-						<h2 class="subject">Обеспечивает надежную фиксацию</h2>
-						<article class="article">
-							<figure class="article__figure">
-								<img
-									class="article__icon-weight"
-									src="images/icon/icon-weight.png"
-									alt="icon weight"
-								/>
-							</figure>
-							<div class="article__desc">
-								<span class="article__text"
-									>Надежная вакуумная фиксация,</span
-								>
-								<span class="article__text">
-									что выдерживает механическу
-								</span>
-								<span class="article__text"
-									>нагрузку
-									<span class="label">до 45 кг</span></span
-								>
+							<div class="special__wrap">
+								<div class="special__box">
+									<p class="special__subject">Preț vechi</p>
+									<h3 class="special__slogan first">
+										178 Ron
+									</h3>
+								</div>
+								<div class="special__box">
+									<p class="special__subject">Preț nou</p>
+									<h3 class="special__slogan">89 Ron</h3>
+								</div>
 							</div>
-						</article>
-						<figure class="figure__pic">
-							<img
-								src="images/main/section/gif/main-gif-2.gif"
-								alt="image"
-							/>
-						</figure>
-						<h2 class="subject">
-							Используйте в разных приложениях
-						</h2>
-						<article class="article">
-							<figure class="article__figure">
-								<img
-									class="article__icon-weight"
-									src="images/icon/icon-phone-2.png"
-									alt="icon phone"
-								/>
-								<img
-									class="article__icon-arrow-2"
-									src="images/icon/arrow-2.png"
-									alt="icon arrow"
-								/>
-							</figure>
-							<div class="article__desc">
-								<span class="article__text"
-									>Конструкция держателя</span
-								>
-								<span class="article__text">
-									позволяет менять положение
-								</span>
-								<span class="article__text"
-									>телефона в
-									<span class="label"
-										>горизонтальное и</span
-									></span
-								>
-								<span class="article__text"
-									><span class="label"
-										>вертикальное положение</span
-									></span
-								>
-							</div>
-						</article>
-						<figure class="figure__pic">
-							<img
-								src="images/main/section/gif/main-gif-3.gif"
-								alt="image"
-							/>
-						</figure>
-						<div class="section__desc">
 							<button class="btn">Comandă Acum</button>
+							<div class="shadow"></div>
 							<ul class="special__desc">
 								<li class="special__text">
 									Doar 89 RON față de 150 RON (preț de retail)
@@ -236,75 +122,196 @@
 							</ul>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section class="variations">
-				<div class="variations__wrap">
-					<h2 class="title">Невероятно гибкий с вращением на 360°</h2>
-					<div class="variations__box first">
-						<img src="images/main/main-icon-4.png" alt="image" />
-						<p class="variations__desc">
-							<span class="label">3 механических шарнира</span>
-							отвечают за фиксацию держателя в нужном положениии
-						</p>
-					</div>
-					<div class="variations__box second">
-						<div class="variations__pic">
-							<img
-								src="images/main/main-icon-5.png"
-								alt="image"
-							/>
+				</section>
+				<section class="section">
+					<div class="section__wrap">
+						<div class="container">
+							<h2 class="subject">
+								Совместим со всеми телефонами
+							</h2>
+							<article class="article">
+								<figure class="article__figure">
+									<img
+										class="article__icon-phone"
+										src="images/icon/icon-phone.png"
+										alt="icon phone"
+									/>
+									<img
+										class="article__icon-arrow"
+										alt="icon arrow"
+										src="images/icon/arrow 1.svg"
+									/>
+								</figure>
+								<div class="article__desc">
+									Механизм регулировки позволяет надежно
+									удерживать смартфоны любых брендов и
+									<span class="article__text label">
+										разных размеров от 4 до 6,5”
+									</span>
+								</div>
+							</article>
+							<figure class="figure__pic">
+								<img
+									src="images/main/section/gif/main-gif-1.gif"
+									alt="image"
+								/>
+							</figure>
+							<h2 class="subject">
+								Обеспечивает надежную фиксацию
+							</h2>
+							<article class="article">
+								<figure class="article__figure">
+									<img
+										class="article__icon-weight"
+										src="images/icon/icon-weight.png"
+										alt="icon weight"
+									/>
+								</figure>
+								<div class="article__desc second">
+									Надежная вакуумная фиксация, что выдерживает
+									механическу нагрузку
+									<span class="label">до 45 кг</span>
+								</div>
+							</article>
+							<figure class="figure__pic">
+								<img
+									src="images/main/section/gif/main-gif-2.gif"
+									alt="image"
+								/>
+							</figure>
+							<h2 class="subject">
+								Используйте в разных приложениях
+							</h2>
+							<article class="article">
+								<figure class="article__figure">
+									<img
+										class="article__icon-phone2"
+										src="images/icon/icon-phone-2.png"
+										alt="icon phone"
+									/>
+									<img
+										class="article__icon-arrow-2"
+										src="images/icon/arrow-2.png"
+										alt="icon arrow"
+									/>
+								</figure>
+								<p class="article__desc third">
+									Конструкция держателя позволяет менять
+									положение телефона в
+									<span class="label"
+										>горизонтальное и вертикальное
+										положение</span
+									>
+								</p>
+							</article>
+							<figure class="figure__pic">
+								<img
+									src="images/main/section/gif/main-gif-3.gif"
+									alt="image"
+								/>
+							</figure>
+							<div class="section__desc second">
+								<button class="btn">Comandă Acum</button>
+								<div class="shadow"></div>
+								<ul class="special__desc">
+									<li class="special__text">
+										Doar 89 RON față de 150 RON (preț de
+										retail)
+									</li>
+									<li class="special__text">
+										Disponibil doar online
+									</li>
+									<li class="special__text">
+										Plată la livrare
+									</li>
+								</ul>
+							</div>
 						</div>
-						<p class="variations__desc">
-							Поворотный механизм что позволяет вращать держатель
-							на все <span class="label">360 градусов</span>
-						</p>
 					</div>
-				</div>
-			</section>
-			<section class="installation">
-				<h2 class="title">Имеет вариативность установки</h2>
-				<div class="installation__wrap">
-					<div class="installation__box">
-						<img
-							src="images/main/installation/img-1.jpg"
-							alt="image"
-							class="installation__img"
-						/>
-						<div class="installation__desc">
-							<p class="installation__text">На лобовое стекло</p>
+				</section>
+				<section class="variations">
+					<div class="container">
+						<h2 class="title">
+							Невероятно гибкий с вращением на 360°
+						</h2>
+						<div class="variations__box first">
+							<figure class="variations__fig">
+								<img
+									src="images/main/variations/img-1.webp"
+									alt="image"
+								/>
+							</figure>
+							<p class="variations__desc">
+								<span class="label"
+									>3 механических шарнира</span
+								>
+								отвечают за фиксацию держателя в нужном
+								положениии
+							</p>
 						</div>
-					</div>
-					<div class="installation__box">
-						<img
-							src="images/main/installation/img-2.jpg"
-							alt="image"
-							class="installation__img"
-						/>
-						<div class="installation__desc">
-							<p class="installation__text">На переднюю панель</p>
-						</div>
-					</div>
-					<div class="installation__box">
-						<img
-							src="images/main/installation/img-3.jpg"
-							alt="image"
-							class="installation__img"
-						/>
-						<div class="installation__desc">
-							<p class="installation__text">
-								На люк или панорамную крышу
+						<div class="variations__box second">
+							<figure class="variations__pic">
+								<img
+									src="images/main/variations/img-2.webp"
+									alt="image"
+								/>
+							</figure>
+							<p class="variations__desc">
+								Поворотный механизм что позволяет вращать
+								держатель на все
+								<span class="label">360 градусов</span>
 							</p>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section class="advantages">
-				<div class="advantages__block">
-					<h2 class="title">
-						Превосходит любой держатель что вы когда либо видели
-					</h2>
+				</section>
+				<section class="installation">
 					<div class="container">
+						<h2 class="title">Имеет вариативность установки</h2>
+						<div class="installation__wrap">
+							<div class="installation__box">
+								<img
+									src="images/main/installation/img-1.jpg"
+									alt="image"
+									class="installation__img"
+								/>
+								<div class="installation__desc">
+									<p class="installation__text">
+										На лобовое стекло
+									</p>
+								</div>
+							</div>
+							<div class="installation__box">
+								<img
+									src="images/main/installation/img-2.jpg"
+									alt="image"
+									class="installation__img"
+								/>
+								<div class="installation__desc">
+									<p class="installation__text">
+										На переднюю панель
+									</p>
+								</div>
+							</div>
+							<div class="installation__box">
+								<img
+									src="images/main/installation/img-3.jpg"
+									alt="image"
+									class="installation__img"
+								/>
+								<div class="installation__desc">
+									<p class="installation__text">
+										На люк или панорамную крышу
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="advantages">
+					<div class="container">
+						<h2 class="title">
+							Превосходит любой держатель что вы когда либо видели
+						</h2>
 						<div class="advantages__logo">
 							<a href="#" class="logo">
 								<img src="./images/logo/TEXMO.svg" alt="logo" />
@@ -312,8 +319,8 @@
 							<a href="#" class="logo">
 								<p class="logo__text">
 									<span class="label">99% </span>других
+									держателей
 								</p>
-								<p class="logo__text">держателей</p>
 							</a>
 						</div>
 						<ul class="advantages__list">
@@ -329,353 +336,389 @@
 							</li>
 						</ul>
 					</div>
-				</div>
-				<div class="section__desc">
-					<button class="btn">Comandă Acum</button>
-					<ul class="special__desc">
-						<li class="special__text">
-							Doar 89 RON față de 150 RON (preț de retail)
-						</li>
-						<li class="special__text">Disponibil doar online</li>
-						<li class="special__text">Plată la livrare</li>
-					</ul>
-				</div>
-			</section>
-			<section class="instruction">
-				<h2 class="title">Простая пошаговая установка</h2>
-				<div class="container">
-					<figure class="figure__pic">
-						<img
-							src="images/main/section/gif/main-gif-4.gif"
-							alt="image"
-						/>
-					</figure>
-					<div class="instruction__box">
-						<div class="instruction__content">
-							<figure class="instruction__figure">
-								<img
-									src="images/main/instruction/img-1.jpg"
-									alt="image"
-								/>
-								<span class="instruction__number">1</span>
-							</figure>
-							<p class="instruction__desc">
-								Протрите центральную консоль или стекло, на
-								которое нужно наклеить
-							</p>
-						</div>
-						<div class="instruction__content">
-							<figure class="instruction__figure">
-								<img
-									src="images/main/instruction/img-2.jpg"
-									alt="image"
-								/>
-								<span class="instruction__number">2</span>
-							</figure>
-							<p class="instruction__desc">
-								Оторвите электростатическую пленку
-							</p>
-						</div>
-						<div class="instruction__content">
-							<figure class="instruction__figure">
-								<img
-									src="images/main/instruction/img-3.jpg"
-									alt="image"
-								/>
-								<span class="instruction__number">3</span>
-							</figure>
-							<p class="instruction__desc">
-								Плотно прижмите присоску и поверните
-								переключатель вправо
-							</p>
-						</div>
-						<div class="instruction__content">
-							<figure class="instruction__figure">
-								<img
-									src="images/main/instruction/img-4.jpg"
-									alt="image"
-								/>
-								<span class="instruction__number">4</span>
-							</figure>
-							<p class="instruction__desc">
-								Поверните подставку в нужное положение и нажмите
-								на переключатель блокировки в положение ВЫКЛ
-							</p>
+				</section>
+				<section class="additionally">
+					<div class="container">
+						<div class="section__desc">
+							<button class="btn">Comandă Acum</button>
+							<div class="shadow"></div>
+							<ul class="special__desc">
+								<li class="special__text">
+									Doar 89 RON față de 150 RON (preț de retail)
+								</li>
+								<li class="special__text">
+									Disponibil doar online
+								</li>
+								<li class="special__text">Plată la livrare</li>
+							</ul>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section class="dimensions">
-				<h2 class="title">Габариты держателя</h2>
-			</section>
-			<section class="comments">
-				<div class="container">
-					<h2 class="title">Что говорят наши довольные клиенты</h2>
-				</div>
-				<div class="rating">
-					<div class="rating__block">
-						<h3 class="rating__title">4,8</h3>
-						<ul class="rating__list">
-							<li class="rating__itesm">
-								<img
-									src="images/main/rating/icon-star.png"
-									alt="icon"
-								/>
+				</section>
+				<section class="instruction">
+					<div class="container">
+						<h2 class="title">Простая пошаговая установка</h2>
+						<figure class="figure__pic">
+							<img
+								src="images/main/section/gif/main-gif-4.gif"
+								alt="image"
+							/>
+						</figure>
+						<div class="instruction__box">
+							<div class="instruction__content">
+								<figure class="instruction__figure">
+									<img
+										src="images/main/instruction/img-1.jpg"
+										alt="image"
+									/>
+									<span class="instruction__number">1</span>
+								</figure>
+								<p class="instruction__desc">
+									Протрите центральную консоль или стекло, на
+									которое нужно наклеить
+								</p>
+							</div>
+							<div class="instruction__content">
+								<figure class="instruction__figure">
+									<img
+										src="images/main/instruction/img-2.jpg"
+										alt="image"
+									/>
+									<span class="instruction__number">2</span>
+								</figure>
+								<p class="instruction__desc">
+									Оторвите электростатическую пленку
+								</p>
+							</div>
+							<div class="instruction__content">
+								<figure class="instruction__figure">
+									<img
+										src="images/main/instruction/img-3.jpg"
+										alt="image"
+									/>
+									<span class="instruction__number">3</span>
+								</figure>
+								<p class="instruction__desc">
+									Плотно прижмите присоску и поверните
+									переключатель вправо
+								</p>
+							</div>
+							<div class="instruction__content">
+								<figure class="instruction__figure">
+									<img
+										src="images/main/instruction/img-4.jpg"
+										alt="image"
+									/>
+									<span class="instruction__number">4</span>
+								</figure>
+								<p class="instruction__desc">
+									Поверните подставку в нужное положение и
+									нажмите на переключатель блокировки в
+									положение ВЫКЛ
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="dimensions">
+					<div class="container">
+						<h2 class="title">Габариты держателя</h2>
+					</div>
+				</section>
+				<section class="comments">
+					<div class="container">
+						<h2 class="title">
+							Что говорят наши довольные клиенты
+						</h2>
+						<div class="rating">
+							<div class="rating__block">
+								<h3 class="rating__title">4,8</h3>
+								<ul class="rating__list">
+									<li class="rating__itesm">
+										<img
+											src="images/main/rating/icon-star.png"
+											alt="icon"
+										/>
+									</li>
+									<li class="rating__itesm">
+										<img
+											src="images/main/rating/icon-star.png"
+											alt="icon"
+										/>
+									</li>
+									<li class="rating__itesm">
+										<img
+											src="images/main/rating/icon-star.png"
+											alt="icon"
+										/>
+									</li>
+									<li class="rating__itesm">
+										<img
+											src="images/main/rating/icon-star.png"
+											alt="icon"
+										/>
+									</li>
+									<li class="rating__itesm">
+										<img
+											src="images/main/rating/icon-star-1.5.png"
+											alt="icon"
+										/>
+									</li>
+								</ul>
+								<span class="rating__text"
+									>Based on 374 Reviews</span
+								>
+							</div>
+							<ul class="graph">
+								<li class="graph__item">
+									<h3 class="graph__title">
+										Качество сборки
+									</h3>
+									<img
+										class="graph__img"
+										src="images/main/rating/grahp-1.png"
+										alt="icon graph"
+									/>
+								</li>
+								<li class="graph__item">
+									<h3 class="graph__title">Удобство</h3>
+									<img
+										class="graph__img"
+										src="images/main/rating/grahp-2.png"
+										alt="icon graph"
+									/>
+								</li>
+								<li class="graph__item">
+									<h3 class="graph__title">Стоимость</h3>
+									<img
+										class="graph__img"
+										src="images/main/rating/grahp-3.png"
+										alt="icon graph"
+									/>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="comments-swiper swiper">
+						<div class="comments-swiper__wrapper swiper-wrapper">
+							<div class="comments-swiper__slide swiper-slide">
+								<figure class="comments-swiper__figure">
+									<img
+										class="comments-swiper__img"
+										src="images/main/comments/img-1.jpg"
+										alt="image"
+									/>
+								</figure>
+								<div class="comments-swiper__desc">
+									<h3 class="comments-swiper__title">
+										Alexandru Dragomir
+									</h3>
+									<div class="comments-swiper__content">
+										<img
+											class="comments-swiper__icon"
+											src="images/main/comments/icon-stars.png"
+											alt="icons"
+										/>
+										<span class="comments-swiper__rating"
+											>(4,9/5)</span
+										>
+									</div>
+									<p class="comments-swiper__text">
+										Я не ожидал чего-то прям супер
+										увидительного от этого товара. Но он
+										дейтсвительно удобный. Его можно
+										поворачивать как угодно, нет никакий
+										шаткости. Стоит вас сразу предупредить -
+										он достаочно большой, когда разложен
+										полностью
+									</p>
+								</div>
+							</div>
+							<div class="comments-swiper__slide swiper-slide">
+								<figure class="comments-swiper__figure">
+									<img
+										class="comments-swiper__img"
+										src="images/main/comments/img-2.jpg"
+										alt="image"
+									/>
+								</figure>
+								<div class="comments-swiper__desc">
+									<h3 class="comments-swiper__title">
+										Vasile Nistor
+									</h3>
+									<div class="comments-swiper__content">
+										<img
+											class="comments-swiper__icon"
+											src="images/main/comments/icon-stars.png"
+											alt="icons"
+										/>
+										<span class="comments-swiper__rating"
+											>(4,7/5)</span
+										>
+									</div>
+									<p class="comments-swiper__text">
+										Держатель очень хорош. Ничто не
+										шататеся, даже во время езды по
+										боздорожью. Установил за 2 минуты по
+										интстукции. В целом я доволен этой
+										покупкой
+									</p>
+								</div>
+							</div>
+							<div class="comments-swiper__slide swiper-slide">
+								<figure class="comments-swiper__figure">
+									<img
+										class="comments-swiper__img"
+										src="images/main/comments/img-3.jpg"
+										alt="image"
+									/>
+								</figure>
+								<div class="comments-swiper__desc">
+									<h3 class="comments-swiper__title">
+										Anca Moise
+									</h3>
+									<div class="comments-swiper__content">
+										<img
+											class="comments-swiper__icon"
+											src="images/main/comments/icon-stars.png"
+											alt="icons"
+										/>
+										<span class="comments-swiper__rating"
+											>(4,8/5)</span
+										>
+									</div>
+									<p class="comments-swiper__text">
+										Этот держатель - синоним слова удобство.
+										На самом деле, лучший дежратель для
+										телефона что у меня были в авто. А
+										поверьте их было не мало. Его легко
+										проворачивать на все стороны, а само
+										крепление невероятно надежное
+									</p>
+								</div>
+							</div>
+							<div class="comments-swiper__slide swiper-slide">
+								<figure class="comments-swiper__figure">
+									<img
+										class="comments-swiper__img"
+										src="images/main/comments/img-4.jpg"
+										alt="image"
+									/>
+								</figure>
+								<div class="comments-swiper__desc">
+									<h3 class="comments-swiper__title">
+										Andrei Popescu
+									</h3>
+									<div class="comments-swiper__content">
+										<img
+											class="comments-swiper__icon"
+											src="images/main/comments/icon-stars.png"
+											alt="icons"
+										/>
+										<span class="comments-swiper__rating"
+											>(5/5)</span
+										>
+									</div>
+									<p class="comments-swiper__text">
+										Держатель полностью соотвествует
+										заявленным функциям. Крепится к чему
+										угодно. Мне кажется, что его можно
+										прицепить даже к бетону. Мой телефон ни
+										разу не выпадал за все время поездок,
+										как это было с прошлым держателем
+									</p>
+								</div>
+							</div>
+							<div class="comments-swiper__slide swiper-slide">
+								<figure class="comments-swiper__figure">
+									<img
+										class="comments-swiper__img"
+										src="images/main/comments/img-5.jpg"
+										alt="image"
+									/>
+								</figure>
+								<div class="comments-swiper__desc">
+									<h3 class="comments-swiper__title">
+										Sergiu Marinescu
+									</h3>
+									<div class="comments-swiper__content">
+										<img
+											class="comments-swiper__icon"
+											src="images/main/comments/icon-stars.png"
+											alt="icons"
+										/>
+										<span class="comments-swiper__rating"
+											>(4,9/5)</span
+										>
+									</div>
+									<p class="comments-swiper__text">
+										Использую несколько недель. Конструкция
+										выглядит надежно, качественный палстик.
+										хорошо держит заданное положение. Пока
+										доволен, а там время покажет
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="container">
+						<h2 class="order__head">как оформить Заказ</h2>
+						<ul class="order">
+							<li class="order__item">
+								<figure class="order__icon">
+									<img
+										src="images/main/order/icn-1.png"
+										alt="icon"
+									/>
+								</figure>
+								<h3 class="order__title">Оставьте заявку</h3>
+								<p class="order__desc">
+									Заполните форму на нашем сайте
+								</p>
 							</li>
-							<li class="rating__itesm">
-								<img
-									src="images/main/rating/icon-star.png"
-									alt="icon"
-								/>
+							<li class="order__item">
+								<figure class="order__icon">
+									<img
+										src="images/main/order/icn-2.png"
+										alt="icon"
+									/>
+								</figure>
+								<h3 class="order__title">Подтвердите заказ</h3>
+								<p class="order__desc">
+									Оператор позвонит в течение 15 минут чтобы
+									подтвердить заказ
+								</p>
 							</li>
-							<li class="rating__itesm">
-								<img
-									src="images/main/rating/icon-star.png"
-									alt="icon"
-								/>
+							<li class="order__item">
+								<figure class="order__icon">
+									<img
+										src="images/main/order/icn-3.png"
+										alt="icon"
+									/>
+								</figure>
+								<h3 class="order__title">Доставка</h3>
+								<p class="order__desc">
+									Доставим в любую точку в течение 1-3 дней
+								</p>
 							</li>
-							<li class="rating__itesm">
-								<img
-									src="images/main/rating/icon-star.png"
-									alt="icon"
-								/>
-							</li>
-							<li class="rating__itesm">
-								<img
-									src="images/main/rating/icon-star-1.5.png"
-									alt="icon"
-								/>
+							<li class="order__item">
+								<figure class="order__icon">
+									<img
+										src="images/main/order/icn-4.png"
+										alt="icon"
+									/>
+								</figure>
+								<h3 class="order__title">Получение</h3>
+								<p class="order__desc">
+									Оплачивайте курьеру при получении товара
+								</p>
 							</li>
 						</ul>
-						<span class="rating__text">Based on 374 Reviews</span>
 					</div>
-					<ul class="graph">
-						<li class="graph__item">
-							<h3 class="graph__title">Качество сборки</h3>
-							<img
-								class="graph__img"
-								src="images/main/rating/grahp-1.png"
-								alt="icon graph"
-							/>
-						</li>
-						<li class="graph__item">
-							<h3 class="graph__title">Удобство</h3>
-							<img
-								class="graph__img"
-								src="images/main/rating/grahp-2.png"
-								alt="icon graph"
-							/>
-						</li>
-						<li class="graph__item">
-							<h3 class="graph__title">Стоимость</h3>
-							<img
-								class="graph__img"
-								src="images/main/rating/grahp-3.png"
-								alt="icon graph"
-							/>
-						</li>
-					</ul>
-				</div>
-				<div class="swiper mySwiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<figure class="swiper-figure">
-								<img
-									class="swiper-img"
-									src="images/main/comments/img-1.jpg"
-									alt="image"
-								/>
-							</figure>
-							<div class="swiper-desc">
-								<h3 class="swiper-title">Alexandru Dragomir</h3>
-								<div class="swiper-content">
-									<img
-										class="swiper-icon"
-										src="images/main/comments/icon-stars.png"
-										alt="icons"
-									/>
-									<span class="swiper-rating">(4,9/5)</span>
-								</div>
-								<p class="swiper-text">
-									Я не ожидал чего-то прям супер увидительного
-									от этого товара. Но он дейтсвительно
-									удобный. Его можно поворачивать как угодно,
-									нет никакий шаткости. Стоит вас сразу
-									предупредить - он достаочно большой, когда
-									разложен полностью
-								</p>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<figure class="swiper-figure">
-								<img
-									class="swiper-img"
-									src="images/main/comments/img-2.jpg"
-									alt="image"
-								/>
-							</figure>
-							<div class="swiper-desc">
-								<h3 class="swiper-title">Vasile Nistor</h3>
-								<div class="swiper-content">
-									<img
-										class="swiper-icon"
-										src="images/main/comments/icon-stars.png"
-										alt="icons"
-									/>
-									<span class="swiper-rating">(4,7/5)</span>
-								</div>
-								<p class="swiper-text">
-									Держатель очень хорош. Ничто не шататеся,
-									даже во время езды по боздорожью. Установил
-									за 2 минуты по интстукции. В целом я доволен
-									этой покупкой
-								</p>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<figure class="swiper-figure">
-								<img
-									class="swiper-img"
-									src="images/main/comments/img-3.jpg"
-									alt="image"
-								/>
-							</figure>
-							<div class="swiper-desc">
-								<h3 class="swiper-title">Anca Moise</h3>
-								<div class="swiper-content">
-									<img
-										class="swiper-icon"
-										src="images/main/comments/icon-stars.png"
-										alt="icons"
-									/>
-									<span class="swiper-rating">(4,8/5)</span>
-								</div>
-								<p class="swiper-text">
-									Этот держатель - синоним слова удобство. На
-									самом деле, лучший дежратель для телефона
-									что у меня были в авто. А поверьте их было
-									не мало. Его легко проворачивать на все
-									стороны, а само крепление невероятно
-									надежное
-								</p>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<figure class="swiper-figure">
-								<img
-									class="swiper-img"
-									src="images/main/comments/img-4.jpg"
-									alt="image"
-								/>
-							</figure>
-							<div class="swiper-desc">
-								<h3 class="swiper-title">Andrei Popescu</h3>
-								<div class="swiper-content">
-									<img
-										class="swiper-icon"
-										src="images/main/comments/icon-stars.png"
-										alt="icons"
-									/>
-									<span class="swiper-rating">(5/5)</span>
-								</div>
-								<p class="swiper-text">
-									Держатель полностью соотвествует заявленным
-									функциям. Крепится к чему угодно. Мне
-									кажется, что его можно прицепить даже к
-									бетону. Мой телефон ни разу не выпадал за
-									все время поездок, как это было с прошлым
-									держателем
-								</p>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<figure class="swiper-figure">
-								<img
-									class="swiper-img"
-									src="images/main/comments/img-5.jpg"
-									alt="image"
-								/>
-							</figure>
-							<div class="swiper-desc">
-								<h3 class="swiper-title">Sergiu Marinescu</h3>
-								<div class="swiper-content">
-									<img
-										class="swiper-icon"
-										src="images/main/comments/icon-stars.png"
-										alt="icons"
-									/>
-									<span class="swiper-rating">(4,9/5)</span>
-								</div>
-								<p class="swiper-text">
-									Использую несколько недель. Конструкция
-									выглядит надежно, качественный палстик.
-									хорошо держит заданное положение. Пока
-									доволен, а там время покажет
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-pagination"></div>
-				</div>
-				<div class="container">
-					<h2 class="order__head">как оформить Заказ</h2>
-					<ul class="order">
-						<li class="order__item">
-							<figure class="order__icon">
-								<img
-									src="images/main/order/icn-1.png"
-									alt="icon"
-								/>
-							</figure>
-							<h3 class="order__title">Оставьте заявку</h3>
-							<p class="order__desc">
-								Заполните форму на нашем сайте
-							</p>
-						</li>
-						<li class="order__item">
-							<figure class="order__icon">
-								<img
-									src="images/main/order/icn-2.png"
-									alt="icon"
-								/>
-							</figure>
-							<h3 class="order__title">Подтвердите заказ</h3>
-							<p class="order__desc">
-								Оператор позвонит в течение 15 минут чтобы
-								подтвердить заказ
-							</p>
-						</li>
-						<li class="order__item">
-							<figure class="order__icon">
-								<img
-									src="images/main/order/icn-3.png"
-									alt="icon"
-								/>
-							</figure>
-							<h3 class="order__title">Доставка</h3>
-							<p class="order__desc">
-								Доставим в любую точку в течение 1-3 дней
-							</p>
-						</li>
-						<li class="order__item">
-							<figure class="order__icon">
-								<img
-									src="images/main/order/icn-4.png"
-									alt="icon"
-								/>
-							</figure>
-							<h3 class="order__title">Получение</h3>
-							<p class="order__desc">
-								Оплачивайте курьеру при получении товара
-							</p>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section class="additional">
-				<div class="additional__wrap">
+				</section>
+				<section class="additional">
 					<header class="header">
 						<div class="container">
 							<a href="#" class="logo">
@@ -683,199 +726,221 @@
 							</a>
 						</div>
 					</header>
-					<div class="container">
-						<h2 class="title">Сделайте поездки еще комфортнее</h2>
+					<div class="head">
+						<div class="container">
+							<h1 class="title">
+								Сделайте поездки еще комфортнее
+							</h1>
+						</div>
+						<div class="subtitle">
+							<p class="subtitle__text">
+								С автомобильным держателем для телефона
+							</p>
+						</div>
 					</div>
-					<div class="subtitle">
-						<p class="subtitle__text">
-							С автомобильным держателем для телефона
+					<div class="container">
+						<div class="content">
+							<ul class="content__list">
+								<li class="content__item">
+									<img
+										src="images/main/page/icon-1.png"
+										alt="icon"
+										class="content__icon"
+									/>
+									<p class="content__desc">
+										Надежная фиксация
+									</p>
+								</li>
+								<li class="content__item">
+									<img
+										src="images/main/page/icon-2.png"
+										alt="icon"
+										class="content__icon"
+									/>
+									<p class="content__desc">
+										Вращение на 360°
+									</p>
+								</li>
+								<li class="content__item">
+									<img
+										src="images/main/page/icon-3.png"
+										alt="icon"
+										class="content__icon"
+									/>
+									<p class="content__desc">
+										Регулировка угла наклона
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="special">
+						<ul class="special__list">
+							<li class="special__item">Special offer</li>
+							<li class="special__item">Special offer</li>
+							<li class="special__item">Special offer</li>
+							<li class="special__item">Special offer</li>
+						</ul>
+						<div class="special__content">
+							<div class="special__block">
+								<h3 class="special__title">-40% Reducere</h3>
+								<img
+									src="images/icon/icon-percent.png"
+									alt="icon percent"
+								/>
+							</div>
+							<div class="special__wrap">
+								<div class="special__box">
+									<p class="special__subject">Preț vechi</p>
+									<h3 class="special__slogan first">
+										178 Ron
+									</h3>
+								</div>
+								<div class="special__box">
+									<p class="special__subject">Preț nou</p>
+									<h3 class="special__slogan">89 Ron</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="entry">
+					<div class="container">
+						<h2 class="entry__title">Заполните форму для заказа</h2>
+						<p class="entry__subtitle">
+							Менеджер свяжется <br />
+							с вами в
+							<a class="entry__link" href="tel:"
+								>течение 15 минут,</a
+							>
+							чтобы уточнить детали и подтвердить заказ
+						</p>
+						<button class="entry__btn">
+							<svg viewBox="0 0 22 22">
+								<circle
+									opacity="0.1"
+									cx="10.896"
+									cy="10.896"
+									r="10.896"
+									fill="white"
+								/>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M14.864 14.0211C14.8094 14.0756 14.7434 14.1453 14.6735 14.219C14.4991 14.4041 14.2812 14.6343 14.1446 14.7276C13.4259 15.2187 12.4645 14.9837 11.7845 14.7004C10.8874 14.3266 9.91068 13.6376 9.03371 12.7605C8.15592 11.8834 7.467 10.9064 7.09322 10.0098C6.8102 9.32957 6.57474 8.36797 7.06588 7.64918C7.15914 7.51249 7.38982 7.29491 7.57471 7.12014C7.64868 7.05044 7.71782 6.98459 7.7725 6.9301C7.86956 6.83352 8.00092 6.7793 8.13785 6.7793C8.27478 6.7793 8.40614 6.83352 8.5032 6.9301L9.82545 8.25196C9.92198 8.34902 9.97617 8.48035 9.97617 8.61724C9.97617 8.75413 9.92198 8.88545 9.82545 8.98251L9.46525 9.34198C9.34496 9.4614 9.26644 9.61646 9.24138 9.7841C9.21632 9.95174 9.24606 10.123 9.32618 10.2724C9.82161 11.2074 10.5865 11.9722 11.5216 12.4674C11.671 12.5475 11.8422 12.5772 12.0098 12.5521C12.1774 12.527 12.3324 12.4485 12.4517 12.3281L12.811 11.9686C12.9081 11.8721 13.0394 11.8178 13.1763 11.8178C13.3133 11.8178 13.4446 11.8721 13.5417 11.9686L14.864 13.2907C14.9606 13.3878 15.0147 13.5191 15.0147 13.6559C15.0147 13.7928 14.9606 13.9241 14.864 14.0211Z"
+									fill="white"
+								/>
+							</svg>
+							<span>Работаем с 9:00 до 20:00</span>
+						</button>
+						<form action="" class="form">
+							<input
+								class="form__name"
+								type="text"
+								id="name"
+								name="name"
+								placeholder="Name"
+							/>
+
+							<input
+								class="form__number"
+								type="text"
+								id="number"
+								name="number"
+								placeholder="Number"
+							/>
+						</form>
+						<div class="entry__box">
+							<button class="btn">Comandă Acum</button>
+							<div class="shadow"></div>
+							<ul class="special__desc">
+								<li class="special__text">
+									Doar 89 RON față de 150 RON (preț de retail)
+								</li>
+								<li class="special__text">
+									Disponibil doar online
+								</li>
+								<li class="special__text">Plată la livrare</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__head">
+						<h2 class="footer__title">
+							<span>SSL</span> Conexiune Securizata
+						</h2>
+						<p class="footer__subtitle">
+							Datele dvs. sung protejate prin SSL 256 de biti.
 						</p>
 					</div>
-				</div>
-				<div class="content">
-					<ul class="content__list">
-						<li class="content__item">
-							<img
-								src="images/main/page/main-icon-1.png"
-								alt="icon"
-								class="content__icon"
-							/>
-							<p class="content__desc">Надежная фиксация</p>
+					<ul class="security">
+						<li class="security__item">
+							<figure class="security__figure left">
+								<img
+									src="images/footer/image-1.png"
+									alt="icon"
+									class="security__icon"
+								/>
+							</figure>
+							<div class="security__desc left">
+								<h3 class="security__title">
+									Garanția returnării
+								</h3>
+								<p class="security__subtitle">
+									banilor în decurs de 30 de zile
+								</p>
+							</div>
 						</li>
-						<li class="content__item">
-							<img
-								src="images/main/page/main-icon-2.png"
-								alt="icon"
-								class="content__icon"
-							/>
-							<p class="content__desc">Вращение на 360°</p>
-						</li>
-						<li class="content__item">
-							<img
-								src="images/main/page/main-icon-3.png"
-								alt="icon"
-								class="content__icon"
-							/>
-							<p class="content__desc">
-								Регулировка угла наклона
-							</p>
+						<li class="security__item">
+							<figure class="security__figure right">
+								<img
+									src="images/footer/image-2.png"
+									alt="icon"
+									class="security__icon"
+								/>
+							</figure>
+							<div class="security__desc">
+								<h3 class="security__title">
+									Achiziție sigură
+								</h3>
+								<p class="security__subtitle">
+									Fără plăți în avans. Plata la livrare.
+								</p>
+							</div>
 						</li>
 					</ul>
-				</div>
-			</section>
-			<section class="special entry">
-				<ul class="special__list">
-					<li class="special__item">Special offer</li>
-					<li class="special__item">Special offer</li>
-					<li class="special__item">Special offer</li>
-					<li class="special__item">Special offer</li>
-				</ul>
-				<div class="special__content">
-					<div class="special__block">
-						<h3 class="special__title">-40% Reducere</h3>
-						<img
-							src="images/icon/icon-percent.png"
-							alt="icon percent"
-						/>
-					</div>
-					<div class="special__wrap">
-						<div class="special__box">
-							<p class="special__subject">Preț vechi</p>
-							<h3 class="special__slogan del">
-								<del>178 Ron</del>
-							</h3>
-						</div>
-						<div class="special__box">
-							<p class="special__subject">Preț nou</p>
-							<h3 class="special__slogan">89 Ron</h3>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="entry">
-				<div class="container">
-					<h2 class="entry__title">Заполните форму для заказа</h2>
-					<p class="entry__subtitle">
-						Менеджер свяжется <br />
-						с вами в
-						<a class="entry__link" href="tel:">течение 15 минут,</a>
-						чтобы уточнить детали и подтвердить заказ
+					<p class="footer__desc">
+						Aveți nevoie de ajutor? Scrieți-ne la:
+						support@ems-therapy.com și vă răspundem în cel mai scurt
+						timp.
 					</p>
-					<button class="entry__btn">
-						<svg viewBox="0 0 22 22">
-							<circle
-								opacity="0.1"
-								cx="10.896"
-								cy="10.896"
-								r="10.896"
-								fill="white"
-							/>
-							<path
-								fill-rule="evenodd"
-								clip-rule="evenodd"
-								d="M14.864 14.0211C14.8094 14.0756 14.7434 14.1453 14.6735 14.219C14.4991 14.4041 14.2812 14.6343 14.1446 14.7276C13.4259 15.2187 12.4645 14.9837 11.7845 14.7004C10.8874 14.3266 9.91068 13.6376 9.03371 12.7605C8.15592 11.8834 7.467 10.9064 7.09322 10.0098C6.8102 9.32957 6.57474 8.36797 7.06588 7.64918C7.15914 7.51249 7.38982 7.29491 7.57471 7.12014C7.64868 7.05044 7.71782 6.98459 7.7725 6.9301C7.86956 6.83352 8.00092 6.7793 8.13785 6.7793C8.27478 6.7793 8.40614 6.83352 8.5032 6.9301L9.82545 8.25196C9.92198 8.34902 9.97617 8.48035 9.97617 8.61724C9.97617 8.75413 9.92198 8.88545 9.82545 8.98251L9.46525 9.34198C9.34496 9.4614 9.26644 9.61646 9.24138 9.7841C9.21632 9.95174 9.24606 10.123 9.32618 10.2724C9.82161 11.2074 10.5865 11.9722 11.5216 12.4674C11.671 12.5475 11.8422 12.5772 12.0098 12.5521C12.1774 12.527 12.3324 12.4485 12.4517 12.3281L12.811 11.9686C12.9081 11.8721 13.0394 11.8178 13.1763 11.8178C13.3133 11.8178 13.4446 11.8721 13.5417 11.9686L14.864 13.2907C14.9606 13.3878 15.0147 13.5191 15.0147 13.6559C15.0147 13.7928 14.9606 13.9241 14.864 14.0211Z"
-								fill="white"
-							/>
-						</svg>
-						Работаем с 9:00 до 20:00
-					</button>
-					<form action="" class="form">
-						<input
-							class="form__name"
-							type="text"
-							id="name"
-							name="name"
-							placeholder="Name"
-						/>
-
-						<input
-							class="form__number"
-							type="text"
-							id="number"
-							name="number"
-							placeholder="Number"
-						/>
-					</form>
-					<div class="entry__box">
-						<button class="btn">Comandă Acum</button>
-						<ul class="special__desc">
-							<li class="special__text">
-								Doar 89 RON față de 150 RON (preț de retail)
-							</li>
-							<li class="special__text">
-								Disponibil doar online
-							</li>
-							<li class="special__text">Plată la livrare</li>
-						</ul>
+					<nav class="footer__nav">
+						<a href="#" class="footer__nav-link">Politica Retur*</a>
+						<a href="#" class="footer__nav-link">Privacy Policy</a>
+						<a href="#" class="footer__nav-link">Terms of use</a>
+						<a href="#" class="footer__nav-link">Delivery policy</a>
+						<a href="#" class="footer__nav-link"
+							>Terms & Conditions</a
+						>
+					</nav>
+					<div class="footer__contacts">
+						<span class="footer__contact"
+							>Ads Maruv SRL, Iasi, bdul Alexandru cel Bun
+							14</span
+						>
+						<span class="footer__contact"
+							>OGRN: 1197746695530 VAT: 7708365555</span
+						>
+						<span class="footer__contact"
+							>adsimvorisauv@gmail.com</span
+						>
 					</div>
 				</div>
-			</section>
-		</main>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__head">
-					<h2 class="footer__title">
-						<span>SSL</span> Conexiune Securizata
-					</h2>
-					<p class="footer__subtitle">
-						Datele dvs. sung protejate prin SSL 256 de biti.
-					</p>
-				</div>
-				<ul class="security">
-					<li class="security__item">
-						<figure class="security__figure left">
-							<img
-								src="images/footer/image-1.png"
-								alt="icon"
-								class="security__icon"
-							/>
-						</figure>
-						<div class="security__desc left">
-							<h3 class="security__title">Garanția returnării</h3>
-							<p class="security__subtitle">
-								banilor în decurs de 30 de zile
-							</p>
-						</div>
-					</li>
-					<li class="security__item">
-						<figure class="security__figure right">
-							<img
-								src="images/footer/image-2.png"
-								alt="icon"
-								class="security__icon"
-							/>
-						</figure>
-						<div class="security__desc">
-							<h3 class="security__title">Achiziție sigură</h3>
-							<p class="security__subtitle">
-								Fără plăți în avans. Plata la livrare.
-							</p>
-						</div>
-					</li>
-				</ul>
-				<p class="footer__desc">
-					Aveți nevoie de ajutor? Scrieți-ne la:
-					support@ems-therapy.com și vă răspundem în cel mai scurt
-					timp.
-				</p>
-				<nav class="footer__nav">
-					<a href="#" class="footer__nav-link">Politica Retur*</a>
-					<a href="#" class="footer__nav-link">Privacy Policy</a>
-					<a href="#" class="footer__nav-link">Terms of use</a>
-					<a href="#" class="footer__nav-link">Delivery policy</a>
-					<a href="#" class="footer__nav-link">Terms & Conditions</a>
-				</nav>
-				<div class="footer__contacts">
-					<span class="footer__contact"
-						>Ads Maruv SRL, Iasi, bdul Alexandru cel Bun 14</span
-					>
-					<span class="footer__contact"
-						>OGRN: 1197746695530 VAT: 7708365555</span
-					>
-					<span class="footer__contact">adsimvorisauv@gmail.com</span>
-				</div>
-			</div>
-		</footer>
+			</footer>
+		</div>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 		<script src="script/script.js"></script>
 	</body>

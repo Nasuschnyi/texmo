@@ -19,6 +19,7 @@
         font-size: 20px;
         line-height: 161%;
         text-align: center;
+        transform: translate(-1px, 1px);
 
         span {
             color: map-get($color, "green");
@@ -37,6 +38,7 @@
         line-height: 136.1%;
         color: map-get($color, "gray-3");
         text-align: center;
+        transform: translate(-5px, 1px);
     }
 
     &__desc {
@@ -64,6 +66,26 @@
             &:is(:hover, :active) {
                 color: map-get($color, gray-3);
             }
+
+            &:nth-child(1) {
+                transform: translate(-2px, 3px);
+            }
+
+            &:nth-child(2) {
+                transform: translate(13px, 3px);
+            }
+
+            &:nth-child(3) {
+                transform: translate(1px, -8px);
+            }
+
+            &:nth-child(4) {
+                transform: translate(16px, -8px);
+            }
+
+            &:nth-child(5) {
+                transform: translate(-2px, -13px);
+            }
         }
     }
 
@@ -71,6 +93,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 8px 3px 0 0px;
     }
 
     &__contact {
@@ -86,8 +109,8 @@
     align-items: center;
     border-radius: 15px;
     background: #ededed;
-    padding: 20px;
-    margin: 0 0 40px;
+    padding: 18px 20px;
+    margin: 0 0 41px;
     overflow: hidden;
 
     &__item {
@@ -95,9 +118,30 @@
         align-items: center;
         gap: 12px;
 
+        &:first-child {
+            width: 81%;
+
+            & .security__title {
+                transform: translate(-1px, 4px);
+            }
+
+            & .security__subtitle {
+                width: 99%;
+                transform: translate(-1px, 6px);
+            }
+        }
+
         &:last-child {
             border-left: 1px solid rgb(100, 101, 107, 0.3);
             padding: 0 0 0 21px;
+
+            & .security__title {
+                transform: translate(0, -2px);
+            }
+
+            & .security__desc {
+                transform: translate(13px, 6px);
+            }
         }
     }
 
@@ -110,14 +154,20 @@
 
             & .security__icon {
                 position: absolute;
-                top: -7px;
-                left: -30px;
+                top: -3px;
+                left: -28px;
             }
         }
 
         &.right {
             width: 37px;
             height: 47px;
+
+            & .security__icon {
+                position: absolute;
+                top: 0px;
+                left: -1px;
+            }
         }
     }
 
@@ -128,7 +178,7 @@
     }
 
     &__title {
-        font-size: 14px;
+        font-size: 15px;
         color: map-get($color, dark-3);
         margin: 0 0 6px;
     }
