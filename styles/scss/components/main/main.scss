@@ -298,6 +298,7 @@
         scale: (129%);
         transform: translate(18px, -3px);
         rotate: 4deg;
+        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.3));
     }
 
     &__icon-arrow {
@@ -314,15 +315,13 @@
         scale: (107%);
         transform: translate(14px, -15px);
         rotate: 58deg;
+        filter: drop-shadow(12px 10px 14px rgba(0, 0, 0, 0.3));
     }
 
     &__icon-arrow-2 {
         position: absolute;
         top: 15px;
         left: 4px;
-    }
-
-    &__icon-weight {
     }
 
     &__desc {
@@ -367,6 +366,7 @@
         scale: 138%;
         transform: translate(17px, 3px);
         rotate: (-12.04deg);
+        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.3));
     }
 
     &__circle {
@@ -437,6 +437,7 @@
             position: absolute;
             top: -9px;
             left: -25px;
+            filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.3));
         }
     }
 
@@ -463,7 +464,7 @@
 
     & .title {
         color: map-get($color, "dark");
-        margin: 0 auto 39px;
+        margin: 0 auto 40px;
         width: 100%;
     }
 
@@ -483,13 +484,17 @@
 
         &:nth-child(2) {
             & .installation__desc {
-                padding: 20px 15px 26px;
+                padding: 17px 10px 24px;
             }
         }
 
         &:nth-child(3) {
             & .installation__desc {
-                padding: 15px 15px 24px;
+                padding: 13px 10px 20px;
+            }
+
+            & .installation__text {
+                transform: translate(-1px, 0px);
             }
         }
     }
@@ -502,9 +507,13 @@
         color: map-get($color, "black");
         font-weight: 500;
         background: map-get($color, "white");
-        padding: 18px 16px 26px;
+        padding: 15px 10px 24px;
         border-radius: 0 0 16px 16px;
         text-align: center;
+    }
+
+    &__text {
+        line-height: 120%;
     }
 }
 
@@ -607,7 +616,7 @@
 }
 
 .instruction {
-    padding: 63px 0 48px;
+    padding: 63px 0 50px;
 
     & .title {
         color: map-get($color, "black");
@@ -658,20 +667,20 @@
 
         &:nth-child(4) {
             & .instruction__number {
-                left: -9px;
+                left: -1px;
                 top: -16px;
             }
 
             & .instruction__desc {
-                font-weight: 400;
-                max-width: 200px;
-                padding: 14px 0 0;
-                line-height: 107%;
-                transform: translate(12px, -1px);
+                max-width: 207px;
+                padding: 13px 0 0;
+                font-size: 14px;
+                line-height: 115%;
+                transform: translate(12px, 0);
             }
 
             & .instruction__figure img {
-                transform: translate(13px, -1px);
+                transform: translate(20px, -2px);
             }
         }
     }
@@ -704,7 +713,7 @@
     &__desc {
         font-weight: 500;
         font-size: 15px;
-        line-height: 119%;
+        line-height: 120%;
         color: map-get($color, "black");
         text-align: center;
         max-width: 195px;
@@ -733,7 +742,6 @@
 .comments {
     padding: 45px 0 66px;
     background: linear-gradient(180deg, #fff 0%, #f6f6f6 100%);
-    //overflow: hidden;
     min-width: 0;
 
     .title {
@@ -746,7 +754,7 @@
     &-swiper {
         max-width: 480px;
         height: 100%;
-        margin: 41px 28px 109px 35px;
+        margin: 42px 28px 109px 35px;
         overflow: visible;
 
         &__slide {
@@ -831,7 +839,7 @@
             background: map-get($color, "orange");
             border-radius: 50%;
             top: 53%;
-            left: -13px;
+            left: -12px;
 
             &::after {
                 color: map-get($color, "white");
@@ -902,7 +910,7 @@
         color: #646464;
         font-variant-numeric: lining-nums proportional-nums;
         font-size: 14.045px;
-        transform: translate(5px, 1px);
+        transform: translate(5px, 0px);
     }
 }
 
@@ -917,6 +925,12 @@
         flex-direction: column;
         gap: 10px;
         margin: 0 0 16px;
+
+        &:nth-child(1) {
+            & .graph__title {
+                margin: -1px 0 0 4px;
+            }
+        }
     }
 
     &__title {
@@ -980,7 +994,7 @@
             }
 
             & .order__desc {
-                padding: 5px 17px 0 12px;
+                padding: 3px 17px 0 12px;
                 line-height: 119%;
             }
         }
@@ -1023,14 +1037,14 @@
     background-color: #000;
     background-image: url("../../images/main/additional/bg.webp");
     background-repeat: no-repeat;
-    padding: 37px 0 0;
+    padding: 38px 0 0;
 
     & .header {
         padding: 0 0 23px;
     }
 
     & .title {
-        margin: 0 5px 19px;
+        margin: 1px 5px 18px;
     }
 
     & .subtitle {
@@ -1078,7 +1092,7 @@
     }
 
     & .special__block {
-        transform: translate(-1px, -2px);
+        padding: 15px 18px;
     }
 }
 
@@ -1089,7 +1103,7 @@
         line-height: 95%;
         text-align: center;
         width: 80%;
-        margin: 25px 39px 38px;
+        margin: 26px 39px 36px;
         color: map-get($color, "black");
         line-height: 118%;
     }
@@ -1097,7 +1111,7 @@
     &__subtitle {
         font-weight: 300;
         font-size: 18px;
-        line-height: 115%;
+        line-height: 116%;
         text-align: center;
         margin: 0 0 36px 0;
         color: map-get($color, "black");
@@ -1162,19 +1176,19 @@
         border: 1px solid #dbdbdb;
         font-size: 20px;
         color: map-get($color, "dark-2");
-        padding: 25px 0 26px 59px;
+        padding: 25px 5px 26px 59px;
         transform: translate(-2px, 2px);
     }
 
     &__name {
         background-image: url("../../images/main/form/icn-user.png");
-        background-position: 11px 50%;
+        background-position: 12px 50%;
         background-repeat: no-repeat;
     }
 
     &__number {
         background-image: url("../../images/main/form/icn-number.png");
-        background-position: 10px 50%;
+        background-position: 12px 50%;
         background-repeat: no-repeat;
     }
 }
