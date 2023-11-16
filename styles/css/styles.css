@@ -120,7 +120,6 @@ h6 {
 }
 .body__wrap {
   width: 480px;
-  margin: 0 auto;
 }
 
 .container {
@@ -201,7 +200,7 @@ h6 {
 }
 
 .page {
-  background: url("../../images/main/page/bg.webp") no-repeat;
+  background: url("../../images/main/page/bg.png") 0 0/100% auto no-repeat;
   margin: 0 0 33px;
 }
 .page .btn {
@@ -275,7 +274,7 @@ h6 {
   height: 96%;
 }
 .content__item:nth-child(3)::before {
-  content: url("../../../../images/main/page/icon-3-1.svg");
+  content: url("../../images/main/page/icon-3-1.svg");
   display: block;
   width: 31px;
   height: 20px;
@@ -313,7 +312,7 @@ h6 {
   color: #fdfdfd;
   height: 83px;
   border-radius: 50px 50px 0px 0px;
-  background: url("../../images/main/page/bg-special.webp") no-repeat;
+  background: url("../../images/main/page/bg-special.png") 0 0/100% auto no-repeat;
 }
 .special__content {
   display: flex;
@@ -408,7 +407,7 @@ h6 {
   padding: 0 0 66px;
 }
 .section__wrap {
-  background: url("../../images/main/section/bg.png") no-repeat;
+  background: url("../../images/main/section/bg.png") 0 0/100% auto no-repeat;
   padding: 53px 0 0 0;
 }
 .section__desc {
@@ -535,7 +534,7 @@ h6 {
 .variations {
   position: relative;
   border-radius: 30px;
-  background: url("../../images/main/variations/bg.webp") no-repeat;
+  background: url("../../images/main/variations/bg.png") 0 0/100% auto no-repeat;
   overflow: hidden;
   padding: 55px 0 352px;
 }
@@ -573,8 +572,9 @@ h6 {
 }
 .variations__fig img {
   position: absolute;
-  top: -9px;
-  left: -25px;
+  height: 91px;
+  width: 91px;
+  transform: translate(-5px, -1px) rotate(-7deg);
   filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.3));
 }
 .variations__pic {
@@ -593,7 +593,7 @@ h6 {
 }
 
 .installation {
-  background: url("../../images/main/installation/bg.png") no-repeat;
+  background: url("../../images/main/installation/bg.png") 0 0/100% auto no-repeat;
   padding: 60px 0 0 0;
 }
 .installation .title {
@@ -614,6 +614,9 @@ h6 {
   max-width: 196px;
   filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.1));
 }
+.installation__box:nth-child(1) .installation__desc {
+  padding: 17px 10px 24px;
+}
 .installation__box:nth-child(2) .installation__desc {
   padding: 17px 10px 24px;
 }
@@ -622,6 +625,15 @@ h6 {
 }
 .installation__box:nth-child(3) .installation__text {
   transform: translate(-1px, 0px);
+}
+.installation__block {
+  height: 186px;
+  width: 196px;
+}
+.installation__block img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 .installation__img {
   border-radius: 16px 16px 0px 0px;
@@ -646,7 +658,7 @@ h6 {
   overflow: hidden;
 }
 .advantages .title {
-  margin: 0 auto 37px;
+  margin: 0 auto 38px;
 }
 .advantages__logo {
   display: flex;
@@ -678,18 +690,24 @@ h6 {
   width: 145px;
 }
 .advantages__item::before {
-  content: url("../../images/main/advantages/icon-1.png");
+  content: "";
+  background: url("../../images/main/advantages/icon-1.png") 0 0/71px 91px no-repeat;
   position: absolute;
-  top: -1px;
-  left: -51px;
+  top: 0;
+  left: -54px;
   display: block;
+  width: 80px;
+  height: 80px;
 }
 .advantages__item::after {
-  content: url("../../images/main/advantages/icon-2.png");
+  content: "";
+  background: url("../../images/main/advantages/icon-2.png") 0 0/42px 42px no-repeat;
   position: absolute;
+  display: block;
   top: 2px;
   right: -43px;
-  display: block;
+  width: 42px;
+  height: 42px;
 }
 .advantages__item:nth-child(2)::before {
   transform: translate(0, 1px);
@@ -720,7 +738,7 @@ h6 {
 }
 
 .instruction {
-  padding: 63px 0 50px;
+  padding: 63px 0 48px;
 }
 .instruction .title {
   color: #000;
@@ -741,6 +759,9 @@ h6 {
 .instruction__content:nth-child(2) {
   margin: 0px -9px 0 0px;
 }
+.instruction__content:nth-child(2) .instruction__figure {
+  width: 187px;
+}
 .instruction__content:nth-child(2) .instruction__number {
   left: -22px;
 }
@@ -755,7 +776,8 @@ h6 {
   top: -16px;
 }
 .instruction__content:nth-child(3) .instruction__desc {
-  padding: 19px 0 0 0;
+  padding: 17px 0 0 0;
+  transform: translate(-1px, 0px);
 }
 .instruction__content:nth-child(3) .instruction__figure img {
   transform: translate(0, -2px);
@@ -777,6 +799,8 @@ h6 {
 .instruction__figure {
   position: relative;
   display: flex;
+  width: 191px;
+  height: 132px;
 }
 .instruction__figure img {
   height: 100%;
@@ -809,7 +833,7 @@ h6 {
 }
 
 .dimensions {
-  background: url("../../images/main/dimensions/bg .png") 0 0/contain no-repeat;
+  background: url("../../images/main/dimensions/bg .png") 0 0/100% auto no-repeat;
   width: 480px;
   height: 600px;
   margin: auto;
@@ -835,7 +859,7 @@ h6 {
 .comments-swiper {
   max-width: 480px;
   height: 100%;
-  margin: 42px 28px 109px 35px;
+  margin: 44px 28px 109px 35px;
   overflow: visible;
 }
 .comments-swiper__slide {
@@ -853,6 +877,7 @@ h6 {
 }
 .comments-swiper__figure {
   width: 417px;
+  height: 422px;
   border-radius: 8px;
 }
 .comments-swiper__img {
@@ -1024,17 +1049,18 @@ h6 {
   line-height: 120%;
 }
 .order__item:nth-child(3) .order__icon {
-  transform: translate(-2px, 4px);
+  padding: 22px 0;
+  transform: translate(-3px, 3px);
 }
 .order__item:nth-child(3) .order__title {
-  margin: 11px 3px 12px 0;
+  margin: 9px 5px 13px 0;
 }
 .order__item:nth-child(3) .order__desc {
   padding: 3px 17px 0 12px;
   line-height: 119%;
 }
 .order__item:nth-child(4) .order__icon {
-  transform: translate(-3px, -3px);
+  transform: translate(-3px, -4px);
 }
 .order__item:nth-child(4) .order__desc {
   padding: 3px 5px 0 0;
@@ -1047,7 +1073,7 @@ h6 {
 .order__title {
   font-weight: 600;
   font-size: 18px;
-  margin: 3px 5px 12px 0;
+  margin: 3px 6px 12px 0;
   text-align: center;
 }
 .order__desc {
@@ -1060,8 +1086,9 @@ h6 {
 
 .additional {
   background-color: #000;
-  background-image: url("../../images/main/additional/bg.webp");
+  background-image: url("../../../../images/main/additional/bg.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   padding: 38px 0 0;
 }
 .additional .header {
@@ -1089,6 +1116,10 @@ h6 {
 .additional .content__list {
   flex-direction: row;
 }
+.additional .content__item {
+  border: 1px solid #1e1e1e;
+  background: rgba(67, 67, 67, 0.17);
+}
 .additional .content__item:nth-child(1) img {
   top: -31px;
   left: 23px;
@@ -1114,7 +1145,7 @@ h6 {
   line-height: 95%;
   text-align: center;
   width: 80%;
-  margin: 26px 39px 36px;
+  margin: 26px 39px 35px;
   color: #000;
   line-height: 118%;
 }
@@ -1179,14 +1210,10 @@ h6 {
   transform: translate(-2px, 2px);
 }
 .form__name {
-  background-image: url("../../images/main/form/icn-user.png");
-  background-position: 12px 50%;
-  background-repeat: no-repeat;
+  background: url("../../images/main/form/icn-user.png") 12px 50%/34px 34px no-repeat;
 }
 .form__number {
-  background-image: url("../../images/main/form/icn-number.png");
-  background-position: 12px 50%;
-  background-repeat: no-repeat;
+  background: url("../../images/main/form/icn-number.png") 12px 50%/34px 34px no-repeat;
 }
 
 .footer {
@@ -1314,23 +1341,24 @@ h6 {
 .security__figure {
   position: relative;
 }
+.security__figure img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 .security__figure.left {
   width: 56px;
   height: 56px;
 }
 .security__figure.left .security__icon {
-  position: absolute;
-  top: -3px;
-  left: -28px;
+  transform: translate(-2px, 1px);
 }
 .security__figure.right {
   width: 37px;
   height: 47px;
 }
 .security__figure.right .security__icon {
-  position: absolute;
-  top: 0px;
-  left: -1px;
+  transform: scale(150%) translate(4px, 2px);
 }
 .security__desc.left {
   margin: 0 18px 0 0;

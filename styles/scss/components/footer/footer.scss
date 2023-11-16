@@ -147,15 +147,18 @@
 
     &__figure {
         position: relative;
+        & img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
 
         &.left {
             width: 56px;
             height: 56px;
 
             & .security__icon {
-                position: absolute;
-                top: -3px;
-                left: -28px;
+                transform: translate(-2px, 1px);
             }
         }
 
@@ -164,9 +167,7 @@
             height: 47px;
 
             & .security__icon {
-                position: absolute;
-                top: 0px;
-                left: -1px;
+                transform: scale(150%) translate(4px, 2px);
             }
         }
     }

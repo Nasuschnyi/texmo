@@ -3,7 +3,7 @@
 }
 
 .page {
-    background: url("../../images/main/page/bg.webp") no-repeat;
+    background: url("../../images/main/page/bg.png") 0 0/100% auto no-repeat;
     margin: 0 0 33px;
 
     .btn {
@@ -89,7 +89,7 @@
             }
 
             &::before {
-                content: url("../../../../images/main/page/icon-3-1.svg");
+                content: url("../../images/main/page/icon-3-1.svg");
                 display: block;
                 width: 31px;
                 height: 20px;
@@ -136,7 +136,7 @@
         color: map-get($color, "b-white");
         height: 83px;
         border-radius: 50px 50px 0px 0px;
-        background: url("../../images/main/page/bg-special.webp") no-repeat;
+        background: url("../../images/main/page/bg-special.png") 0 0/100% auto no-repeat;
     }
 
     &__content {
@@ -243,7 +243,7 @@
     padding: 0 0 66px;
 
     &__wrap {
-        background: url("../../images/main/section/bg.png") no-repeat;
+        background: url("../../images/main/section/bg.png") 0 0/100% auto no-repeat;
         padding: 53px 0 0 0;
     }
 
@@ -392,7 +392,7 @@
 .variations {
     position: relative;
     border-radius: 30px;
-    background: url("../../images/main/variations/bg.webp") no-repeat;
+    background: url("../../images/main/variations/bg.png") 0 0/100% auto no-repeat;
     overflow: hidden;
     padding: 55px 0 352px;
 
@@ -435,8 +435,9 @@
 
         & img {
             position: absolute;
-            top: -9px;
-            left: -25px;
+            height: 91px;
+            width: 91px;
+            transform: translate(-5px, -1px) rotate(-7deg);
             filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.3));
         }
     }
@@ -459,7 +460,7 @@
 }
 
 .installation {
-    background: url("../../images/main/installation/bg.png") no-repeat;
+    background: url("../../images/main/installation/bg.png") 0 0/100% auto no-repeat;
     padding: 60px 0 0 0;
 
     & .title {
@@ -482,6 +483,12 @@
         max-width: 196px;
         filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.1));
 
+        &:nth-child(1) {
+            & .installation__desc {
+                padding: 17px 10px 24px;
+            }
+        }
+
         &:nth-child(2) {
             & .installation__desc {
                 padding: 17px 10px 24px;
@@ -496,6 +503,17 @@
             & .installation__text {
                 transform: translate(-1px, 0px);
             }
+        }
+    }
+
+    &__block {
+        height: 186px;
+        width: 196px;
+
+        & img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
         }
     }
 
@@ -525,7 +543,7 @@
     overflow: hidden;
 
     & .title {
-        margin: 0 auto 37px;
+        margin: 0 auto 38px;
     }
 
     &__logo {
@@ -562,19 +580,25 @@
         width: 145px;
 
         &::before {
-            content: url("../../images/main/advantages/icon-1.png");
+            content: ("");
+            background: url("../../images/main/advantages/icon-1.png") 0 0 / 71px 91px no-repeat;
             position: absolute;
-            top: -1px;
-            left: -51px;
+            top: 0;
+            left: -54px;
             display: block;
+            width: 80px;
+            height: 80px;
         }
 
         &::after {
-            content: url("../../images/main/advantages/icon-2.png");
+            content: ("");
+            background: url("../../images/main/advantages/icon-2.png") 0 0 / 42px 42px no-repeat;
             position: absolute;
+            display: block;
             top: 2px;
             right: -43px;
-            display: block;
+            width: 42px;
+            height: 42px;
         }
 
         &:nth-child(2) {
@@ -616,7 +640,7 @@
 }
 
 .instruction {
-    padding: 63px 0 50px;
+    padding: 63px 0 48px;
 
     & .title {
         color: map-get($color, "black");
@@ -639,6 +663,10 @@
         &:nth-child(2) {
             margin: 0px -9px 0 0px;
 
+            & .instruction__figure {
+                width: 187px;
+            }
+
             & .instruction__number {
                 left: -22px;
             }
@@ -657,7 +685,8 @@
             }
 
             & .instruction__desc {
-                padding: 19px 0 0 0;
+                padding: 17px 0 0 0;
+                transform: translate(-1px, 0px);
             }
 
             & .instruction__figure img {
@@ -688,6 +717,8 @@
     &__figure {
         position: relative;
         display: flex;
+        width: 191px;
+        height: 132px;
 
         & img {
             height: 100%;
@@ -726,7 +757,7 @@
 }
 
 .dimensions {
-    background: url("../../images/main/dimensions/bg\ .png") 0 0 / contain no-repeat;
+    background: url("../../images/main/dimensions/bg\ .png") 0 0/100% auto no-repeat;
     width: 480px;
     height: 600px;
     margin: auto;
@@ -754,7 +785,7 @@
     &-swiper {
         max-width: 480px;
         height: 100%;
-        margin: 42px 28px 109px 35px;
+        margin: 44px 28px 109px 35px;
         overflow: visible;
 
         &__slide {
@@ -775,6 +806,7 @@
 
         &__figure {
             width: 417px;
+            height: 422px;
             border-radius: 8px;
         }
 
@@ -986,11 +1018,12 @@
 
         &:nth-child(3) {
             & .order__icon {
-                transform: translate(-2px, 4px);
+                padding: 22px 0;
+                transform: translate(-3px, 3px);
             }
 
             & .order__title {
-                margin: 11px 3px 12px 0;
+                margin: 9px 5px 13px 0;
             }
 
             & .order__desc {
@@ -1001,7 +1034,7 @@
 
         &:nth-child(4) {
             & .order__icon {
-                transform: translate(-3px, -3px);
+                transform: translate(-3px, -4px);
             }
 
             & .order__desc {
@@ -1020,7 +1053,7 @@
     &__title {
         font-weight: 600;
         font-size: 18px;
-        margin: 3px 5px 12px 0;
+        margin: 3px 6px 12px 0;
         text-align: center;
     }
 
@@ -1035,8 +1068,9 @@
 
 .additional {
     background-color: #000;
-    background-image: url("../../images/main/additional/bg.webp");
+    background-image: url("../../../../images/main/additional/bg.png");
     background-repeat: no-repeat;
+    background-size: 100% auto;
     padding: 38px 0 0;
 
     & .header {
@@ -1070,6 +1104,8 @@
         }
 
         &__item {
+            border: 1px solid #1e1e1e;
+            background: rgba(67, 67, 67, 0.17);
             &:nth-child(1) img {
                 top: -31px;
                 left: 23px;
@@ -1103,7 +1139,7 @@
         line-height: 95%;
         text-align: center;
         width: 80%;
-        margin: 26px 39px 36px;
+        margin: 26px 39px 35px;
         color: map-get($color, "black");
         line-height: 118%;
     }
@@ -1181,14 +1217,10 @@
     }
 
     &__name {
-        background-image: url("../../images/main/form/icn-user.png");
-        background-position: 12px 50%;
-        background-repeat: no-repeat;
+        background: url("../../images/main/form/icn-user.png") 12px 50%/34px 34px no-repeat;
     }
 
     &__number {
-        background-image: url("../../images/main/form/icn-number.png");
-        background-position: 12px 50%;
-        background-repeat: no-repeat;
+        background: url("../../images/main/form/icn-number.png") 12px 50%/34px 34px no-repeat;
     }
 }
