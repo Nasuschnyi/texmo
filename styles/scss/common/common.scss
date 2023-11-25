@@ -6,10 +6,9 @@
     color: map-get($color, "white");
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, #fff 100%);
     backdrop-filter: blur(25px);
-    min-width: 480px;
 
     &__wrap {
-        width: 480px;
+        max-width: 480px;
         margin: 0 auto;
     }
 }
